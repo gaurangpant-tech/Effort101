@@ -79,10 +79,10 @@ function Home() {
     <StyledHome data-testid="container">
       <div className="home-container">
       {/* {bunnyState === "yes" ?<div className="title"></div> : <div className="title"></div>} */}
-      {bunnyState === "yes" ?<div className="title"></div> : <div className="title">❤️Babyy!!❤️ You said m effort nhi maarta. </div>}
-      {bunnyState === "yes" ?<div className="title"></div> : <div className="title">So here I'm making effort to make you feel special, in my own way 😜</div>}
-      {bunnyState === "yes" ?<div className="title"></div> : <div className="title">I Louuvvvvvv Youuuu Babbbyyyy ! ♥️♥️</div>}
-      {bunnyState === "yes" ? <div className="title">❤️ It&apos;s a Dinner Date Tonight! ❤️</div> : <div className="title">❤️❤️❤️ Kya m tere liye Effort nahi marta? Don't You Love Me???! ❤️❤️❤️</div>}
+      {bunnyState === "yes" ?<div className="title"></div> : <div className="title" style={{ fontSize: "23px" }}></div>}
+      {bunnyState === "yes" ?<div className="title"></div> : <div className="title" style={{ fontSize: "23px", textAlign: "center" }}>❤️Babyy!!❤️ You said m effort nhi maarta. <br></br>So here I'm making effort to make you feel special, in my own way 😜</div>}
+      {bunnyState === "yes" ?<div className="title"></div> : <div className="title" style={{ fontSize: "22px" }}>I Louuvvvvvv Youuuu Babbbyyyy ! ♥️♥️</div>}
+      {bunnyState === "yes" ? <div className="title" >❤️ It&apos;s a Dinner Date Tonight! ❤️</div> : <div className="title" style={{ fontSize: "23px", textAlign: "center" }}>❤️❤️❤️ Kya m tere liye Effort nahi marta? Don't You Love Me???! ❤️❤️❤️</div>}
         <div className="animation">
           {bunnyState === "normal" && <Lottie options={bunnyPleaseOptions} height={300} width={300} />}
           {bunnyState === "cry" && <Lottie options={bunnyCryOptions} height={300} width={300} />}
