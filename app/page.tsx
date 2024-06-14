@@ -83,13 +83,7 @@ function Home() {
       {bunnyState === "yes" ?<div className="title"></div> : <div className="title" style={{ fontSize: "23px", textAlign: "center" }}>❤️Babyy!!❤️ You said m effort nhi maarta. <br></br>So here I'm making effort to make you feel special, in my own way 😜</div>}
       {bunnyState === "yes" ?<div className="title"></div> : <div className="title" style={{ fontSize: "22px" }}>I Louuvvvvvv Youuuu Babbbyyyy ! ♥️♥️</div>}
       {bunnyState === "yes" ? <div className="title" >❤️ It&apos;s a Dinner Date Tonight! ❤️</div> : <div className="title" style={{ fontSize: "23px", textAlign: "center" }}>❤️❤️❤️ Kya m tere liye Effort nahi marta? Don't You Love Me???! ❤️❤️❤️</div>}
-        <div className="animation">
-          {bunnyState === "normal" && <Lottie options={bunnyPleaseOptions} height={300} width={300} />}
-          {bunnyState === "cry" && <Lottie options={bunnyCryOptions} height={300} width={300} />}
-          {bunnyState === "yes" && <Lottie options={bunnyYesOptions} height={400} width={400} />}
-          {bunnyState === "punch" && <Lottie options={bunnyPunchOptions} height={300} width={300} />}
-        </div>
-        {bunnyState !== "yes" && <div className="buttons">
+      {bunnyState !== "yes" && <div className="buttons">
           <button onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}>Yes</button>
           <Button
             $randomleft={randomPosition.randomLeft}
@@ -102,6 +96,13 @@ function Home() {
             No
           </Button>
         </div>}
+        <div className="animation">
+          {bunnyState === "normal" && <Lottie options={bunnyPleaseOptions} height={300} width={300} />}
+          {bunnyState === "cry" && <Lottie options={bunnyCryOptions} height={300} width={300} />}
+          {bunnyState === "yes" && <Lottie options={bunnyYesOptions} height={400} width={400} />}
+          {bunnyState === "punch" && <Lottie options={bunnyPunchOptions} height={300} width={300} />}
+        </div>
+        
       </div>
     </StyledHome >
   );
