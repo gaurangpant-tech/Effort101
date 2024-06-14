@@ -115,12 +115,13 @@ const StyledHome = styled.div`
   height: 100vh;
   width: 100%;
   align-items: center;
+  
   justify-content: center;
   background-color:#feeafb;
   .home-container{
     display: flex;
     flex-direction:column;
-    gap:3rem;
+    gap:2rem;
     align-items: center;
     justify-content: center;
     .title{
