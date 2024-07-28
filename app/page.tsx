@@ -64,7 +64,7 @@ function Home() {
   const [hasStarted, setHasStarted] = useState(false);
 
   const bunnyObj = { 0: "cry", 1: "punch" };
-  const handleHover = (hoverState) => {
+  const handleHover = (hoverState: boolean) => {
     setHasStarted(true);
     if (hoverState === true) {
       setRandomPosition(getRandomPosition());
