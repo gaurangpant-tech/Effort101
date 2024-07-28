@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import Lottie from "react-lottie";
 import styled from "styled-components";
@@ -125,7 +127,7 @@ function Home() {
         )}
       </div>
       <footer className="footer">
-      This Site belongs to My Baby ❤️ a.k.a Priyanshi Pandey ❤️
+        This Site belongs to My Baby ❤️ a.k.a Priyanshi Pandey ❤️
       </footer>
     </StyledHome>
   );
