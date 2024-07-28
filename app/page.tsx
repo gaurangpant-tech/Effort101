@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import Lottie from "react-lottie";
 import styled from "styled-components";
