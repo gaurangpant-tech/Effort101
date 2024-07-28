@@ -127,7 +127,7 @@ function Home() {
         )}
       </div>
       <footer className="footer">
-        Made with love by
+        This Site belongs to My Baby ❤️ a.k.a Priyanshi Pandey ❤️
       </footer>
     </StyledHome>
   );
