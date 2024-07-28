@@ -63,7 +63,7 @@ function Home() {
   const [randomPosition, setRandomPosition] = useState(getRandomPosition());
   const [hasStarted, setHasStarted] = useState(false);
 
-  const bunnyObj = { 0: "cry", 1: "punch" };
+  const bunnyObj: { [key: number]: string } = { 0: "cry", 1: "punch" };
   const handleHover = (hoverState: boolean) => {
     setHasStarted(true);
     if (hoverState === true) {
@@ -127,7 +127,7 @@ function Home() {
         )}
       </div>
       <footer className="footer">
-        This Site belongs to My Baby ❤️ a.k.a Priyanshi Pandey ❤️
+        Made with love by
       </footer>
     </StyledHome>
   );
